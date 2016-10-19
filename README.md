@@ -15,7 +15,7 @@ The scripts run as follow (package dplyr is needed):
 1. Getting the data: Definition of the url and downloading the data. Unzip the zip file. Changing the working directory to the unzipped folder
 2. Loading features and activity labels: Loading the features.txt and activity_labels.txt using read.table
 3. creating data forms from the different *.txt files: Loading into R the files X_train, y_train and subject_train and merge them using cbind(). loading into R the files X_test, y_test and subject_test and merge them using cbind()
-4. Merge both data sets and reorder the "condition" variable to the first column
+4. Merge both data sets, reorder the "condition" variable to the first column and select the mean and std columns
 5. Rename activity id by descriptive names
 6. Create summary data set by average using group_by and summarise_each
 7. Saving the data sets to txt files
